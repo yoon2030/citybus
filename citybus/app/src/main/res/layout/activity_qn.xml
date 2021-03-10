@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="#FFE5E4E6"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_weight="3"
+            android:text="〈"
+            android:textColor="#FFFFFF"
+            android:textSize="32dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="#FFE5E4E6"
+            android:gravity="center"
+            android:text="1:1 문의하기"
+            android:textColor="#B3ABAB"
+            android:textSize="25sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_weight="3"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#d6d5d5" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="불편사항이나 문의사항을 남겨주세요\n(영업기준일 1~2일)\n긴급상담 필요시 고객센터(0000-0000)"
+            android:padding="10dp"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#E4E0EA">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textColor="#FF5A86E8"
+            android:gravity="center_vertical"
+            android:text="제목"/>
+        <EditText
+            android:id="@+id/Sample1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:background="@null"
+            android:layout_marginLeft="20dp"
+            android:hint="입력하세요"
+            android:inputType="textPersonName"
+            android:textColorHint="#666262"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="279dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="#E4E0EA"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:text="내용"
+                android:textColor="#FF5A86E8"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/Sample2"
+                android:layout_width="match_parent"
+                android:layout_height="238dp"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ems="10"
+                android:hint="입력하세요"
+                android:inputType="textPersonName"
+                android:textColorHint="#666262"
+                android:textSize="20dp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#707F8A"
+            android:padding="10dp"
+            android:text="파일선택"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#d6d5d5" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="#FF5A86E8"
+            android:text="문의하기"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="#d6d5d5" />
+
+    </LinearLayout>
+
+</LinearLayout>

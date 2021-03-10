@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="#FFE5E4E6"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
+            android:layout_weight="4"
+            android:text="〈"
+            android:textColor="#FFFFFF"
+            android:textSize="32dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="마이페이지"
+            android:layout_weight="2"
+            android:textSize="25sp"
+            android:textColor="#B3ABAB"
+            android:gravity="center"
+            android:background="#FFE5E4E6"
+            />
+        <TextView
+            android:id="@+id/button12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:background="#DDB9B0BF"
+            android:layout_marginRight="10dp"
+            android:text="로그아웃"
+            android:textColor="#FFFFFF"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#DDB9B0BF"
+        android:layout_gravity="center"
+        android:textColor="#FFFFFF"
+        android:text="예약한 모바일 티켓이 없습니다"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+
+        android:background="#d6d5d5" />
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFE5E4E6"
+        android:padding="10dp"
+        android:gravity="left"
+        android:text="자주쓰는카드"
+        android:textColor="#7A6A6A"
+        android:textSize="25dp"
+         />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#d6d5d5" />
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFE5E4E6"
+        android:padding="10dp"
+        android:gravity="left"
+        android:textSize="25dp"
+        android:text="결제내역"
+        android:textColor="#7A6A6A"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#d6d5d5" />
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFE5E4E6"
+        android:padding="10dp"
+        android:gravity="left"
+        android:textSize="25dp"
+        android:text="1:1 문의"
+        android:textColor="#7A6A6A"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#d6d5d5" />
+    <Button
+        android:id="@+id/setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFE5E4E6"
+        android:padding="10dp"
+        android:gravity="left"
+        android:textSize="25dp"
+        android:text="설정    "
+        android:textColor="#7A6A6A"
+         />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#989292" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/menu">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/ticket"
+                android:layout_margin="5dp"
+                android:id="@+id/ticket"/>
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/change"
+                android:layout_margin="5dp"
+                android:id="@+id/chage"/>
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/like"
+                android:layout_margin="5dp"
+                android:id="@+id/like"/>
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/announ"
+                android:layout_margin="5dp"
+                android:id="@+id/announcement"/>
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/mypage_clicked"
+                android:layout_margin="5dp"
+                android:id="@+id/mypage"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "965870320457",
+    "firebase_url": "https://citybus-27575.firebaseio.com",
+    "project_id": "citybus-27575",
+    "storage_bucket": "citybus-27575.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:965870320457:android:d43a28a6967b0508f1f898",
+        "android_client_info": {
+          "package_name": "com.joeyfilm.citybus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "965870320457-rflo7efhi4503jch4es41f63g8mp5a5k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6EnPecDaGgtg7TDxmQREu8nQm7gvHgS0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "965870320457-rflo7efhi4503jch4es41f63g8mp5a5k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

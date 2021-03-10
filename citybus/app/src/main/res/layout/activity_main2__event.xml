@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="#FFE5E4E6"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/back"
+            android:layout_width="match_parent"
+            android:layout_weight="3"
+            android:text="〈"
+            android:textColor="#FFFFFF"
+            android:textSize="32dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="공지사항/이벤트"
+            android:layout_weight="1"
+            android:textSize="25sp"
+            android:textColor="#B3ABAB"
+            android:gravity="center"
+            android:background="#FFE5E4E6"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_weight="3"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@+id/title"
+        android:id="@+id/eventse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="50dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:background="#cac8c8"
+            android:paddingLeft="30px"
+            android:textSize="20dp"
+            android:text="공지사항"
+            />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="50dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:textColor="#FF5A86E8"
+            android:paddingLeft="30px"
+            android:textSize="20dp"
+            android:text="이벤트 ✓" />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:layout_marginBottom="20px"
+        android:background="@drawable/controller" />
+    <ListView
+        android:id="@+id/eventlist2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/eventse"
+        android:layout_above="@+id/status"/>
+
+    <LinearLayout
+        android:id="@+id/status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#989292" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/menu">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/ticket"
+                android:layout_margin="5dp"
+                android:id="@+id/ticket"/>
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/change"
+                android:layout_margin="5dp"
+                android:id="@+id/chage"/>
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/like"
+                android:layout_margin="5dp"
+                android:id="@+id/like"/>
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/announ_clicked"
+                android:layout_margin="5dp"
+                android:id="@+id/announcement"/>
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/mypage"
+                android:layout_margin="5dp"
+                android:id="@+id/mypage"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="bottom"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="#FFE5E4E6"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_weight="3"
+            android:text="〈"
+            android:textColor="#000000"
+            android:textSize="32dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="자주쓰는 카드"
+            android:layout_weight="1"
+            android:textSize="25sp"
+            android:textColor="#B3ABAB"
+            android:gravity="center"
+            android:background="#FFE5E4E6"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_weight="3"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#d6d5d5" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="자주쓰는 카드는 최대 3개 등록하실 수 있습니다.\n(저장되는 항목 : 카드번호 전체, 카드 유효기간 ,생년월일)"
+            android:padding="10dp"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:text="하나카드(구외환카드)"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#E3DDDD"
+                android:orientation="vertical"
+                android:padding="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10dp"
+                    android:text="My Credit Card"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="15dp"
+                    android:textSize="25dp"
+                    android:text="하나카드(구외환카드)"
+                    />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:textSize="25dp"
+                        android:text="1111  -  2222  -  ****  -  ****"
+                        />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="VALID\nTHRU"
+                        android:layout_weight="2"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="00/00"/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#d6d5d5" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="#8B869E"
+            android:layout_weight="1"
+            android:text="수정"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp" />
+        <View
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+             />
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:background="#8B869E"
+            android:text="삭제"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#d6d5d5" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#FF5A86E8"
+        android:text="추가"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="#d6d5d5" />
+
+
+</LinearLayout>

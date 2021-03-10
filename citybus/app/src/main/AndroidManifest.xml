@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.joeyfilm.citybus">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".RouteChoice"></activity>
+        <activity android:name=".stationchoice" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps" />
+
+        <uses-library android:name="com.google.android.maps" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Settin_Main" />
+        <activity android:name=".setting2" />
+        <activity android:name=".setting3" />
+        <activity android:name=".setting4" />
+        <activity android:name=".setting5" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".LoginMain" />
+        <activity android:name=".id_search" />
+        <activity android:name=".id_search_result" />
+        <activity android:name=".pw_search" />
+        <activity android:name=".pw_search_result" />
+        <activity android:name=".sign_up_4" />
+        <activity android:name=".Main2Activity_Event" />
+        <activity android:name=".MainActivity_event" />
+        <activity android:name=".Mypage" />
+        <activity android:name=".Paylist" />
+        <activity android:name=".QNA" />
+        <activity android:name=".sign_up" />
+        <activity android:name=".confirm" />
+        <activity android:name=".Favorites" />
+        <activity android:name=".payment2" />
+        <activity android:name=".payment" />
+        <activity android:name=".BusChoose" />
+    </application>
+
+</manifest>
